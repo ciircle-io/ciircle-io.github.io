@@ -1,0 +1,45 @@
+@keyframes pulse {
+  0% { box-shadow: 0 0 32px white, inset 0 0 32px white; }
+  50% { box-shadow: 0 0 64px white, inset 0 0 64px white; }
+  100% { box-shadow: 0 0 32px white, inset 0 0 32px white; }
+}
+
+body {
+  display: grid;
+  background: #1f1f1f;
+  justify-content: center;
+  margin: 4vw auto;
+}
+
+.circle {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 60vw;
+  height: 60vw;
+  border-radius: 100%;
+  box-shadow: 0 0 32px white, inset 0 0 32px white;
+  animation: pulse 6s linear 6s infinite;
+}
+
+.circle * {
+  text-align: center;
+  line-height: 4vw;
+  font-size: 3vw;
+  color: gray;
+}
+
+.circle a {
+  color: light-gray;
+  transition: color .2s ease-out, background 1s ease-in;
+  text-decoration: none;
+}
+
+.circle a:hover { 
+  font-weight: bold;
+  color: white;
+}
+
+
