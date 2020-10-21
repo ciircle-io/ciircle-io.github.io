@@ -5,20 +5,69 @@
 }
 
 body {
-  display: grid;
+  display: block;
   background: #1f1f1f;
   justify-content: center;
   margin: 4vw auto;
 }
 
+h1 {
+  text-align: center;
+  font-size: 5vw;
+  color: white;
+}
+
+h2 {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  font-size: 4vw;
+  color: gray;
+}
+
+h3 {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-style: italic;
+  font-size: 3vw;
+  color: gray;
+}
+
+h4 {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  font-size: 2vw;
+  color: gray;
+}
+
+p {
+  margin-left: 8vw;
+  margin-right: 8vw;
+  font-size: 2vw;
+  color: gray;
+}
+
+a {
+  color: gray;
+  transition: color .2s ease-out, background 1s ease-in;
+  font-style: italic;
+  text-decoration: none;
+}
+
+a:hover { 
+  font-weight: bold;
+  color: white;
+}
+
 .circle {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  width: 60vw;
-  height: 60vw;
+  width: 70vw;
+  height: 70vw;
   border-radius: 100%;
   box-shadow: 0 0 32px white, inset 0 0 32px white;
   animation: pulse 6s linear 6s infinite;
@@ -26,8 +75,8 @@ body {
 
 .circle * {
   text-align: center;
-  line-height: 4vw;
-  font-size: 3vw;
+  line-height: 5vw;
+  font-size: 4vw;
   color: gray;
 }
 
